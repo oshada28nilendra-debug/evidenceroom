@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "question": "Can a nonprofit group seek 12000 credits for a GreenHall community project, or should it request clarification first?",
+  "options": [
+    "Apply for 12000 credits",
+    "Reduce request to 10000 credits",
+    "Request written clarification"
+  ],
+  "created_at": "2026-10-18T07:44:52.002753+00:00",
+  "mode": "live_model",
+  "sources": [
+    {
+      "id": "rules",
+      "title": "Fictional GreenHall grant rules",
+      "publisher": "Fictional GreenHall Council",
+      "declared_kind": "primary",
+      "published": "2026-08-01",
+      "location": "sources/rules.txt",
+      "text": "FICTIONAL FIXTURE — authored for EvidenceRoom, not a real grant.\n\nGreenHall's community project grant accepts applications from nonprofit groups.\n\nThe maximum grant award is 10000 credits per project.\n\nApplicants must submit their application by 30 November 2026.",
+      "sha256": "f3c9e19210d9e47867889d2c340c985976c6fb68d98951a73b8dde6e53d0cc7c",
+      "raw_sha256": "69a2c5613cc3d60ba63586eca6ded0313752e2c302efe160eeb16aabcb68bf05",
+      "content_group": "f3c9e19210d9e47867889d2c340c985976c6fb68d98951a73b8dde6e53d0cc7c",
+      "duplicate_of": null
+    },
+    {
+      "id": "faq",
+      "title": "Fictional GreenHall FAQ update",
+      "publisher": "Fictional GreenHall Council",
+      "declared_kind": "primary",
+      "published": "2026-10-01",
+      "location": "sources/faq.html",
+      "text": "GreenHall grant FAQ\n\nFICTIONAL FIXTURE — not a real grant.\n\nNonprofit groups may apply for a GreenHall community project grant.\n\nThe maximum grant award is now 12000 credits per project.\n\nContact the council to confirm which award limit applies to your application.",
+      "sha256": "31b95acbeab03059a1f75c88758d0b5f3cd2093ef352319bb171eec5ac81af7a",
+      "raw_sha256": "0c8c35c96add84176cb912517bc6c91e7b4b6acb00d24bd498439aa8cdaad020",
+      "content_group": "31b95acbeab03059a1f75c88758d0b5f3cd2093ef352319bb171eec5ac81af7a",
+      "duplicate_of": null
+    },
+    {
+      "id": "blog",
+      "title": "Fictional community blog",
+      "publisher": "Fictional Local Blog",
+      "declared_kind": "secondary",
+      "published": "2026-10-10",
+      "location": "sources/blog.txt",
+      "text": "FICTIONAL FIXTURE — a hypothetical local blogger, not independent policy evidence.\n\nA local blog says the GreenHall grant may suit nonprofit groups.\n\nThe blogger has not verified the award limit and recommends checking the council's rules.",
+      "sha256": "32ad9d4de918ac7e19b93947dbd6706a921698d50803b3f324fb054c61e670dd",
+      "raw_sha256": "dc4e9423795994e516d3a807574c4dc15dc2a45e94e949c71f4589f7ab99f59f",
+      "content_group": "32ad9d4de918ac7e19b93947dbd6706a921698d50803b3f324fb054c61e670dd",
+      "duplicate_of": null
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Nonprofit groups are eligible for the GreenHall community project grant.",
+      "origin": "user_input",
+      "passages": [
+        {
+          "id": "faq:60:127",
+          "source_id": "faq",
+          "start": 60,
+          "end": 127,
+          "text": "Nonprofit groups may apply for a GreenHall community project grant.",
+          "score": 6.790417
+        },
+        {
+          "id": "rules:66:145",
+          "source_id": "rules",
+          "start": 66,
+          "end": 145,
+          "text": "GreenHall's community project grant accepts applications from nonprofit groups.",
+          "score": 6.156841
+        },
+        {
+          "id": "blog:84:148",
+          "source_id": "blog",
+          "start": 84,
+          "end": 148,
+          "text": "A local blog says the GreenHall grant may suit nonprofit groups.",
+          "score": 3.892237
+        }
+      ],
+      "evidence": [],
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "Unknown passage ID",
+          "proposal": {
+            "passage_id": "copy passage id",
+            "quote": "Nonprofit groups may apply for a GreenHall community project grant.",
+            "relation": "support",
+            "rationale": "This passage supports the claim that nonprofit groups are eligible for the GreenHall community project grant."
+          }
+        },
+        {
+          "index": 1,
+          "reason": "Unknown passage ID",
+          "proposal": {
+            "passage_id": "copy passage id",
+            "quote": "GreenHall's community project grant accepts applications from nonprofit groups.",
+            "relation": "support",
+            "rationale": "This passage supports the claim that nonprofit groups are eligible for the GreenHall community project grant."
+          }
+        }
+      ],
+      "summary": {
+        "coverage": "missing",
+        "potential_conflict": false,
+        "human_accepted": 0,
+        "unreviewed": 0,
+        "content_groups": 0,
+        "publisher_groups": 0,
+        "notice": "Counts and quote matches are provenance signals, not factual confidence or proof of entailment."
+      }
+    },
+    {
+      "id": "c2",
+      "text": "The maximum GreenHall grant award is 10000 credits per project.",
+      "origin": "user_input",
+      "passages": [
+        {
+          "id": "rules:147:200",
+          "source_id": "rules",
+          "start": 147,
+          "end": 200,
+          "text": "The maximum grant award is 10000 credits per project.",
+          "score": 10.132025
+        },
+        {
+          "id": "faq:129:186",
+          "source_id": "faq",
+          "start": 129,
+          "end": 186,
+          "text": "The maximum grant award is now 12000 credits per project.",
+          "score": 7.460477
+        },
+        {
+          "id": "faq:60:127",
+          "source_id": "faq",
+          "start": 60,
+          "end": 127,
+          "text": "Nonprofit groups may apply for a GreenHall community project grant.",
+          "score": 2.535708
+        }
+      ],
+      "evidence": [
+        {
+          "id": "c2-e1",
+          "source_id": "rules",
+          "passage_id": "rules:147:200",
+          "quote": "The maximum grant award is 10000 credits per project.",
+          "start": 147,
+          "end": 200,
+          "relation": "support",
+          "rationale": "This passage directly states the maximum grant award is 10,000 credits per project.",
+          "review": "unreviewed",
+          "origin": "model_interpretation"
+        },
+        {
+          "id": "c2-e2",
+          "source_id": "faq",
+          "passage_id": "faq:129:186",
+          "quote": "The maximum grant award is now 12000 credits per project.",
+          "start": 129,
+          "end": 186,
+          "relation": "oppose",
+          "rationale": "This passage contradicts the claim that the maximum is 10,000 credits.",
+          "review": "unreviewed",
+          "origin": "model_interpretation"
+        }
+      ],
+      "rejected": [],
+      "summary": {
+        "coverage": "evidence_present",
+        "potential_conflict": true,
+        "human_accepted": 0,
+        "unreviewed": 2,
+        "content_groups": 2,
+        "publisher_groups": 1,
+        "notice": "Counts and quote matches are provenance signals, not factual confidence or proof of entailment."
+      }
+    },
+    {
+      "id": "c3",
+      "text": "Applicants must submit by 30 November 2026.",
+      "origin": "user_input",
+      "passages": [
+        {
+          "id": "rules:202:263",
+          "source_id": "rules",
+          "start": 202,
+          "end": 263,
+          "text": "Applicants must submit their application by 30 November 2026.",
+          "score": 14.315022
+        }
+      ],
+      "evidence": [],
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "Unknown passage ID",
+          "proposal": {
+            "passage_id": "copy passage id",
+            "quote": "Applicants must submit their application by 30 November 2026.",
+            "relation": "context",
+            "rationale": "This passage directly supports the claim that applicants must submit by 30 November 2026."
+          }
+        }
+      ],
+      "summary": {
+        "coverage": "missing",
+        "potential_conflict": false,
+        "human_accepted": 0,
+        "unreviewed": 0,
+        "content_groups": 0,
+        "publisher_groups": 0,
+        "notice": "Counts and quote matches are provenance signals, not factual confidence or proof of entailment."
+      }
+    },
+    {
+      "id": "c4",
+      "text": "Applicants must have three years of audited accounts.",
+      "origin": "user_input",
+      "passages": [
+        {
+          "id": "rules:202:263",
+          "source_id": "rules",
+          "start": 202,
+          "end": 263,
+          "text": "Applicants must submit their application by 30 November 2026.",
+          "score": 4.090006
+        }
+      ],
+      "evidence": [],
+      "rejected": [
+        {
+          "index": 0,
+          "reason": "Unknown passage ID",
+          "proposal": {
+            "passage_id": "copy passage id",
+            "quote": "Applicants must submit their application by 30 November 2026.",
+            "relation": "context",
+            "rationale": "This passage provides a deadline for submitting the application, which is relevant to the claim about the application process but does not directly address the specific credit requirement."
+          }
+        }
+      ],
+      "summary": {
+        "coverage": "missing",
+        "potential_conflict": false,
+        "human_accepted": 0,
+        "unreviewed": 0,
+        "content_groups": 0,
+        "publisher_groups": 0,
+        "notice": "Counts and quote matches are provenance signals, not factual confidence or proof of entailment."
+      }
+    }
+  ],
+  "warnings": [
+    "Some sources share a declared publisher; independence is not established.",
+    "Source kind, publisher and publication date are user declarations, not independently verified.",
+    "Dates can differ; opposing passages may describe different versions or scopes. Resolve manually."
+  ],
+  "errors": [],
+  "decision": "human_review_required",
+  "model": {
+    "calls": 4,
+    "usage": {
+      "prompt_tokens": 1570,
+      "completion_tokens": 499
+    }
+  },
+  "workflow_status": "review_ready",
+  "bundle_digest": "2202a0571d7bc5fac944cf561393515e970e1b1da59582e1fe71e0a83ded7f0e"
+}

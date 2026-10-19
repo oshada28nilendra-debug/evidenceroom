@@ -1,0 +1,32 @@
+test_digest_bound_review_changes_relation_and_preserves_original (tests.test_cli.CLITests.test_digest_bound_review_changes_relation_and_preserves_original) ... ok
+test_html_is_inert_and_cannot_link_to_javascript (tests.test_cli.CLITests.test_html_is_inert_and_cannot_link_to_javascript) ... ok
+test_invalid_case_fails_without_secret_output (tests.test_cli.CLITests.test_invalid_case_fails_without_secret_output) ... ok
+test_offline_cli_end_to_end_exports_and_integrity (tests.test_cli.CLITests.test_offline_cli_end_to_end_exports_and_integrity) ... ok
+test_tampered_source_or_quote_detected (tests.test_cli.CLITests.test_tampered_source_or_quote_detected) ... ok
+test_unknown_or_duplicate_review_ids_rejected (tests.test_cli.CLITests.test_unknown_or_duplicate_review_ids_rejected) ... ok
+test_binary_and_huge_source_rejected (tests.test_core.SourceTests.test_binary_and_huge_source_rejected) ... ok
+test_duplicates_not_counted_as_independent_sources (tests.test_core.SourceTests.test_duplicates_not_counted_as_independent_sources) ... ok
+test_html_is_text_and_hides_active_content (tests.test_core.SourceTests.test_html_is_text_and_hides_active_content) ... ok
+test_rejects_duplicate_ids_and_over_budget (tests.test_core.SourceTests.test_rejects_duplicate_ids_and_over_budget) ... ok
+test_rejects_missing_question_and_ambiguous_source (tests.test_core.SourceTests.test_rejects_missing_question_and_ambiguous_source) ... ok
+test_rejects_traversal_and_symlinks (tests.test_core.SourceTests.test_rejects_traversal_and_symlinks) ... ok
+test_retrieval_offsets_and_relevance (tests.test_core.SourceTests.test_retrieval_offsets_and_relevance) ... ok
+test_valid_case_and_stable_hashes (tests.test_core.SourceTests.test_valid_case_and_stable_hashes) ... ok
+test_ai_plan_then_annotation (tests.test_pipeline.AnnotationTests.test_ai_plan_then_annotation) ... ok
+test_conflicts_visible_without_resolving_truth (tests.test_pipeline.AnnotationTests.test_conflicts_visible_without_resolving_truth) ... ok
+test_empty_evidence_is_missing_not_false (tests.test_pipeline.AnnotationTests.test_empty_evidence_is_missing_not_false) ... ok
+test_exact_span_and_label (tests.test_pipeline.AnnotationTests.test_exact_span_and_label) ... ok
+test_fabricated_quote_and_id_rejected (tests.test_pipeline.AnnotationTests.test_fabricated_quote_and_id_rejected) ... ok
+test_full_pipeline_records_rejected_and_unreviewed_evidence (tests.test_pipeline.AnnotationTests.test_full_pipeline_records_rejected_and_unreviewed_evidence) ... ok
+test_rejects_wrong_envelope_and_duplicate_annotations (tests.test_pipeline.AnnotationTests.test_rejects_wrong_envelope_and_duplicate_annotations) ... ok
+test_all_dns_results_checked_including_mixed_private (tests.test_transport.TransportTests.test_all_dns_results_checked_including_mixed_private) ... ok
+test_http_failures_hide_response_and_refuse_redirect (tests.test_transport.TransportTests.test_http_failures_hide_response_and_refuse_redirect) ... ok
+test_malformed_json_content_rejected (tests.test_transport.TransportTests.test_malformed_json_content_rejected) ... ok
+test_private_urls_and_unlisted_hosts_blocked (tests.test_transport.TransportTests.test_private_urls_and_unlisted_hosts_blocked) ... ok
+test_real_http_json_and_usage_with_simulated_model (tests.test_transport.TransportTests.test_real_http_json_and_usage_with_simulated_model) ... ok
+test_remote_provider_requires_explicit_https_consent (tests.test_transport.TransportTests.test_remote_provider_requires_explicit_https_consent) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 3.157s
+
+OK

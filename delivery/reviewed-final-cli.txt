@@ -1,0 +1,8 @@
+{
+  "status": "review_ready",
+  "mode": "offline_retrieval",
+  "claims": 4,
+  "bundle": "delivery/reviewed-final/bundle.json",
+  "decision": "human_review_required",
+  "model_calls": 0
+}

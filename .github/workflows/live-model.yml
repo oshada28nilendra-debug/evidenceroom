@@ -1,0 +1,50 @@
+name: live-model
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'evidenceroom/**'
+      - 'scripts/**'
+      - 'examples/**'
+      - 'tests/**'
+      - '.github/workflows/live-model.yml'
+      - 'pyproject.toml'
+permissions:
+  contents: read
+jobs:
+  local-inference:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install .
+      - name: Download checksum-pinned CPU runtime and official model
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/evidenceroom-model"
+          cd "$RUNNER_TEMP/evidenceroom-model"
+          curl --fail --silent --show-error --location --retry 2 \
+            https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-x64.tar.gz -o runtime.tar.gz
+          echo '99f83b15cea9a4fb8945516c276b5f42b11608f82104fc6fa98a541cac826de7  runtime.tar.gz' | sha256sum --check
+          tar -xzf runtime.tar.gz
+          curl --fail --silent --show-error --location --retry 2 \
+            https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/90862c4b9d2787eaed51d12237eafdfe7c5f6077/Qwen3-1.7B-Q8_0.gguf -o model.gguf
+          echo '061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a  model.gguf' | sha256sum --check
+      - name: Real local inference and strict fixture gate
+        run: |
+          python scripts/live_smoke.py \
+            --server "$RUNNER_TEMP/evidenceroom-model/llama-b11718/llama-server" \
+            --weights "$RUNNER_TEMP/evidenceroom-model/model.gguf" \
+            --out runs/live-model
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fictional-fixture-live-evidence
+          path: runs/live-model/
+          retention-days: 14

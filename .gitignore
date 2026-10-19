@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+runs/
+build/
+dist/
+*.egg-info/
+.ruff_cache/
+*.gguf

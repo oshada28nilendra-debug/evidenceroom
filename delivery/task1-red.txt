@@ -1,0 +1,19 @@
+test_core (unittest.loader._FailedTest.test_core) ... ERROR
+
+======================================================================
+ERROR: test_core (unittest.loader._FailedTest.test_core)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_core
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_core.py", line 6, in <module>
+    from evidenceroom.core import Error, ingest, load_case, normalize_html
+ModuleNotFoundError: No module named 'evidenceroom.core'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

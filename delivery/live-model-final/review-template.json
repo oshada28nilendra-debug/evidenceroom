@@ -1,0 +1,11 @@
+{
+  "bundle_digest": "18ec36c61e795658ca30251d0fe5919b3f72784f4e4173b96ed55ecd64ce018c",
+  "reviewer": "YOUR NAME",
+  "decisions": [
+    {
+      "evidence_id": "c1-e1",
+      "decision": "reject",
+      "note": "Replace this example after inspecting source and claim."
+    }
+  ]
+}

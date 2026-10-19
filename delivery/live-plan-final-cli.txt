@@ -1,0 +1,8 @@
+{
+  "status": "partial",
+  "mode": "live_model",
+  "claims": 0,
+  "bundle": "delivery/live-plan-final/bundle.json",
+  "decision": "human_review_required",
+  "model_calls": 1
+}

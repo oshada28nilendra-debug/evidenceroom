@@ -1,0 +1,17 @@
+test_retrieval_prioritizes_declared_primary_and_diverse_sources (tests.test_core.SourcePriorityTests.test_retrieval_prioritizes_declared_primary_and_diverse_sources) ... FAIL
+
+======================================================================
+FAIL: test_retrieval_prioritizes_declared_primary_and_diverse_sources (tests.test_core.SourcePriorityTests.test_retrieval_prioritizes_declared_primary_and_diverse_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_core.py", line 114, in test_retrieval_prioritizes_declared_primary_and_diverse_sources
+    self.assertEqual({p['source_id'] for p in passages[:2]},{'rules','faq'})
+AssertionError: Items in the first set but not the second:
+'blog'
+Items in the second set but not the first:
+'faq'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
