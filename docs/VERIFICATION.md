@@ -1,5 +1,19 @@
 # Verification — 18 October 2026
 
+## Latest result — GitHub publication verified, 19 October
+
+Bounded release status: **verified, PR #1 open for user review/merge**. Implementation commit `2ea1d8b4eecab736fab6c951f1a9029cde7c41d4` is published on `feat/evidenceroom-first-release`. Its tree hash exactly matches the prepared local release. The follow-up evidence/documentation commit does not change implementation behavior.
+
+- [Ordinary CI](https://github.com/oshada28nilendra-debug/evidenceroom/actions/runs/39179015402): 39 tests passed, zero skips, on each of Python 3.11/3.12/3.13; lint, formatting, compilation, installation and the offline CLI audit/verify flow passed. All three decoded job logs were inspected.
+- [Real local-model CI](https://github.com/oshada28nilendra-debug/evidenceroom/actions/runs/39179015444): checksum-pinned llama.cpp b11718 and Qwen3-1.7B Q8_0 passed the fixture gate, with 4 actual requests, 2322 prompt tokens and 642 completion tokens. The downloaded artifact's SHA-256 matched the GitHub digest. Its actual bundle, quotes, original 10000/later 12000 support/opposition and remaining context-only claim were inspected; the local bundle integrity command also passed. No paid model API/key was used.
+- [Public source integrations](https://github.com/oshada28nilendra-debug/evidenceroom/actions/runs/39179015431): actual pinned-address HTTPS fetch of `https://www.python.org/` returned 51,765 HTML bytes; actual Crossref discovery returned five bibliographic candidates. The decoded log's metadata/hash report was inspected. These previously blocked integrations are now verified for these requests, not all websites or research questions.
+
+Machine-readable run evidence: `delivery/github-verification.json`. Actual downloaded model artifacts are retained under `delivery/github-live-model/`; source snapshots and JSON/HTML/Markdown reports are present. A clean local Gitleaks scan preceded publication. Automatic planning remains experimental; supplied reviewed factual claims remain the supported release path. This is not a general efficacy, complete-security or production-readiness claim.
+
+The user explicitly permitted publication after changing email privacy on 19 October. These API-created commits use the account email in public commit metadata. Earlier noreply-only local bundle commits were not the remote implementation commits. No history rewrite or automatic merge was performed.
+
+## Historical archive-stage records
+
 ## Publication continuation — designated repository
 
 The user designated `oshada28nilendra-debug/evidenceroom` on 18 October. The repository had only its initial README, with no license or AGENTS instructions. The archived implementation and evidence were restored on `feat/evidenceroom-first-release`; commits use the verified GitHub noreply address. Hosted CI and PR results are pending this first publication. A separate public-integration workflow now exercises actual public TLS source fetching and Crossref discovery; the real-model workflow also runs for same-repository implementation PRs. Earlier archive-stage blocker statements below describe the historical checkpoint, not current repository authorization.

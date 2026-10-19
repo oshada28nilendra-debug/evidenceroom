@@ -1,5 +1,7 @@
 # GitHub handoff
 
+Latest, 19 October: [PR #1](https://github.com/oshada28nilendra-debug/evidenceroom/pull/1) is published on `feat/evidenceroom-first-release`, with ordinary CI, real local-model inference, actual public HTTPS retrieval and Crossref discovery verified. See `delivery/github-verification.json` and the latest VERIFICATION.md section. The bounded implementation is complete; user review/merge is the next step. Do not auto-merge or rebuild. Automatic planning remains experimental; use reviewed factual claims. The user authorized account-email metadata for this publication. Earlier prepared noreply bundle commits were not pushed. The archive-stage instructions below are historical.
+
 Update, 18 October: the user designated `oshada28nilendra-debug/evidenceroom` and authorized publication. The inspected starting repository contained only its initial README and no license/instructions. The release is being prepared on `feat/evidenceroom-first-release`, using the noreply email verified from the repository's initial commit. See the latest publication section in VERIFICATION.md for subsequent CI/PR evidence. The archive-stage checklist below is historical; repository designation is resolved.
 
 No repository was explicitly designated for EvidenceRoom. No GitHub push, commit,

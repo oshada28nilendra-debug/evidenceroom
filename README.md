@@ -8,8 +8,8 @@ behind each citation, rejects invented quotations and keeps human review separat
 from AI interpretation.
 
 Repository: [oshada28nilendra-debug/evidenceroom](https://github.com/oshada28nilendra-debug/evidenceroom).
-The first release is being published on `feat/evidenceroom-first-release` for review.
-Publication check results are recorded in [verification](docs/VERIFICATION.md).
+The bounded first release is published in [PR #1](https://github.com/oshada28nilendra-debug/evidenceroom/pull/1) on `feat/evidenceroom-first-release` and awaits user review/merge.
+Python 3.11/3.12/3.13 CI, real local-model inference, public HTTPS fetching and Crossref discovery passed. See [verification](docs/VERIFICATION.md) for the exact revisions and limits.
 
 ## Contents
 
@@ -48,9 +48,11 @@ bundle and review queue; no claim of global novelty or competitive superiority.
 ## Install
 
 Python **3.11+** is required. Runtime dependencies: Python standard library only.
-Extract the source ZIP and open a terminal in its project directory:
+Clone the release branch and open a terminal in its project directory:
 
 ```bash
+git clone --branch feat/evidenceroom-first-release https://github.com/oshada28nilendra-debug/evidenceroom.git
+cd evidenceroom
 python -m venv .venv
 # Linux/macOS:
 source .venv/bin/activate
@@ -276,8 +278,7 @@ python -m ruff format --check .
 ```
 
 See [the actual verification record](docs/VERIFICATION.md), [security boundaries](SECURITY.md)
-and `delivery/` for executed checks, model attempts and blockers. The ordinary CI workflow is provided for Python 3.11/3.12/3.13; it has not run on
-GitHub at the initial archive checkpoint. A separate `live-model` workflow
+and `delivery/` for executed checks, model attempts and historical blockers. The ordinary CI workflow passed 39 tests on each of Python 3.11/3.12/3.13. A separate `live-model` workflow
 uses checksum-pinned llama.cpp and Qwen3-1.7B Q8 weights against the fictional
 fixture. Its helper is `scripts/live_smoke.py`; it is not a broad benchmark. See
 [GitHub handoff](docs/HANDOFF.md). Simulated HTTP/test-double checks do not establish actual inference.
