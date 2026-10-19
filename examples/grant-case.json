@@ -1,0 +1,40 @@
+{
+  "question": "Can a nonprofit group seek 12000 credits for a GreenHall community project, or should it request clarification first?",
+  "options": [
+    "Apply for 12000 credits",
+    "Reduce request to 10000 credits",
+    "Request written clarification"
+  ],
+  "claims": [
+    "Nonprofit groups are eligible for the GreenHall community project grant.",
+    "The maximum GreenHall grant award is 10000 credits per project.",
+    "Applicants must submit by 30 November 2026.",
+    "Applicants must have three years of audited accounts."
+  ],
+  "sources": [
+    {
+      "id": "rules",
+      "title": "Fictional GreenHall grant rules",
+      "publisher": "Fictional GreenHall Council",
+      "kind": "primary",
+      "published": "2026-08-01",
+      "path": "sources/rules.txt"
+    },
+    {
+      "id": "faq",
+      "title": "Fictional GreenHall FAQ update",
+      "publisher": "Fictional GreenHall Council",
+      "kind": "primary",
+      "published": "2026-10-01",
+      "path": "sources/faq.html"
+    },
+    {
+      "id": "blog",
+      "title": "Fictional community blog",
+      "publisher": "Fictional Local Blog",
+      "kind": "secondary",
+      "published": "2026-10-10",
+      "path": "sources/blog.txt"
+    }
+  ]
+}

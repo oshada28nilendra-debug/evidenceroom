@@ -1,0 +1,139 @@
+{
+  "repository": "https://github.com/oshada28nilendra-debug/evidenceroom",
+  "branch": "feat/evidenceroom-first-release",
+  "pull_request": "https://github.com/oshada28nilendra-debug/evidenceroom/pull/1",
+  "tested_implementation_commit": "2ea1d8b4eecab736fab6c951f1a9029cde7c41d4",
+  "status": "verified_release_pr_open",
+  "bounded_release_complete": true,
+  "merged": false,
+  "runs": [
+    {
+      "id": 39179015444,
+      "name": "live-model",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/oshada28nilendra-debug/evidenceroom/actions/runs/39179015444",
+      "sha": "2ea1d8b4eecab736fab6c951f1a9029cde7c41d4",
+      "event": "pull_request"
+    },
+    {
+      "id": 39179015431,
+      "name": "Public source integrations",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/oshada28nilendra-debug/evidenceroom/actions/runs/39179015431",
+      "sha": "2ea1d8b4eecab736fab6c951f1a9029cde7c41d4",
+      "event": "pull_request"
+    },
+    {
+      "id": 39179015402,
+      "name": "checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/oshada28nilendra-debug/evidenceroom/actions/runs/39179015402",
+      "sha": "2ea1d8b4eecab736fab6c951f1a9029cde7c41d4",
+      "event": "pull_request"
+    },
+    {
+      "id": 39178970550,
+      "name": "checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/oshada28nilendra-debug/evidenceroom/actions/runs/39178970550",
+      "sha": "2ea1d8b4eecab736fab6c951f1a9029cde7c41d4",
+      "event": "push"
+    }
+  ],
+  "tests_per_python": 39,
+  "python_versions": [
+    "3.11",
+    "3.12",
+    "3.13"
+  ],
+  "skipped": 0,
+  "decoded_job_logs_inspected": true,
+  "live_model": {
+    "status": "passed",
+    "bundle_digest": "bf1d3b341583679a984a5ff4faf3d5fa4fdba79a2e8b462a51c1104cee05e852",
+    "model": {
+      "calls": 4,
+      "usage": {
+        "prompt_tokens": 2322,
+        "completion_tokens": 642
+      }
+    },
+    "limit": "One authored fixture; human review still required."
+  },
+  "live_artifact": {
+    "id": 12155776535,
+    "sha256": "a1b09672886bbe82a6814ca768379f66f457af4081eaff6667ebf5de2064cf56",
+    "downloaded_and_hash_checked": true,
+    "retained_in": "delivery/github-live-model"
+  },
+  "paid_model_api_calls": 0,
+  "publication_email": "Account email used with explicit user authorization on 19 October; no privacy guarantee for commit metadata",
+  "limitations": [
+    "Authored fixture integration checks only; no general efficacy, complete-security or production-readiness claim",
+    "User review/merge remains separate"
+  ],
+  "public_integrations": {
+    "timestamp": "2026-10-19T00:03:09.876758+00:00",
+    "checks": {
+      "public_source": {
+        "passed": true,
+        "url": "https://www.python.org/",
+        "mime": "text/html",
+        "bytes": 51765,
+        "sha256": "e69f72991bdef8a233817a23f162f2e63e86f869ac623e78788845edc09cc187"
+      },
+      "crossref": {
+        "passed": true,
+        "metadata": {
+          "provider": "Crossref public metadata",
+          "query": "retrieval augmented generation",
+          "results": [
+            {
+              "title": "Retrieval‐Augmented Generation",
+              "url": "https://doi.org/10.1002/9781394374717.ch03",
+              "doi": "10.1002/9781394374717.ch03",
+              "publisher": "Wiley",
+              "type": "other"
+            },
+            {
+              "title": "Graph‐based Retrieval‐augmented Generation",
+              "url": "https://doi.org/10.1002/9781394374717.ch07",
+              "doi": "10.1002/9781394374717.ch07",
+              "publisher": "Wiley",
+              "type": "other"
+            },
+            {
+              "title": "Efficient Information Retrieval and Response Generation with Retrieval-Augmented Generation (RAG)",
+              "url": "https://doi.org/10.59350/q2pq3-0fv85",
+              "doi": "10.59350/q2pq3-0fv85",
+              "publisher": "Front Matter",
+              "type": "posted-content"
+            },
+            {
+              "title": "Efficient Information Retrieval and Response Generation with Retrieval-Augmented Generation (RAG)",
+              "url": "https://doi.org/10.59350/r9dj1-zkx52",
+              "doi": "10.59350/r9dj1-zkx52",
+              "publisher": "Front Matter",
+              "type": "posted-content"
+            },
+            {
+              "title": "Why Retrieval Augmented Generation?",
+              "url": "https://doi.org/10.5040/bci-0kgd.ch-1",
+              "doi": "10.5040/bci-0kgd.ch-1",
+              "publisher": "Packt Publishing",
+              "type": "other"
+            }
+          ],
+          "notice": "Discovery candidates only; metadata is not evidence for a claim. Review and add primary source URLs to a case."
+        }
+      }
+    },
+    "passed": true,
+    "scope": "Actual public TLS source fetch and bibliographic discovery; no truth or research-quality claim"
+  },
+  "planning": "Experimental automatic planning remains limited; supplied reviewed factual claims are supported."
+}

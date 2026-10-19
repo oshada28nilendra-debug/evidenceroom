@@ -1,0 +1,18 @@
+{
+  "bundle_digest": "7df85da4a59caaee1a71ee73cd43f70addb435acc895372d3d725c69434365b0",
+  "reviewer": "Authored demonstration reviewer",
+  "decisions": [
+    {
+      "evidence_id": "c2-e1",
+      "decision": "accept",
+      "relation": "support",
+      "note": "Original rule states the 10000 limit, but may be superseded."
+    },
+    {
+      "evidence_id": "c2-e2",
+      "decision": "accept",
+      "relation": "oppose",
+      "note": "Later FAQ states 12000, so the documents disagree on this claim; obtain clarification."
+    }
+  ]
+}

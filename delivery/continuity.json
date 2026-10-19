@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/oshada28nilendra-debug/issueforge",
+  "main_merge_commit": "27f4e888010afaddff648031d08a8f9c89be83e8",
+  "pr1_merged": true,
+  "pr2_merged": true,
+  "read_files": {
+    "PROJECT_LEDGER.json": "79a4afe74ed082ba1891c2689c86219262152455d987f10e6c9477fce257e66b",
+    "docs-VERIFICATION.md": "5b7275fef68b742c12f91c96aabb70f965af7a26d3e36aca6ce39ce5d18c8ba1",
+    "README.md": "a76f94330db159c6be40bbff56559ff2dfb53544627ebbc7f7812c25cff42b7c"
+  }
+}

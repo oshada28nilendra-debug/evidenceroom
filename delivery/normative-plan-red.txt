@@ -1,0 +1,21 @@
+test_normative_model_plan_abstains_instead_of_auto_researching (tests.test_pipeline.PlanningRegressionTests.test_normative_model_plan_abstains_instead_of_auto_researching) ... ERROR
+
+======================================================================
+ERROR: test_normative_model_plan_abstains_instead_of_auto_researching (tests.test_pipeline.PlanningRegressionTests.test_normative_model_plan_abstains_instead_of_auto_researching)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_pipeline.py", line 179, in test_normative_model_plan_abstains_instead_of_auto_researching
+    report=build(p,provider=provider)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1e12a4453378/evidenceroom/evidenceroom/pipeline.py", line 156, in build
+    output = provider.complete(
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_pipeline.py", line 22, in complete
+    return next(self.outputs)
+           ^^^^^^^^^^^^^^^^^^
+StopIteration
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)

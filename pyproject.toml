@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidenceroom"
+version = "0.1.0"
+description = "Local-first claim/evidence decision audits with exact source spans and human review"
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Oshada Nilendra"}]
+dependencies = []
+
+[project.scripts]
+evidenceroom = "evidenceroom.cli:main"
+
+[tool.setuptools]
+packages = ["evidenceroom"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["F", "E9", "I"]

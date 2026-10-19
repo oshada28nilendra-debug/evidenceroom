@@ -1,0 +1,18 @@
+{
+  "bundle_digest": "f35487c98382ab97fc2c29794c7eb107e49a6e1cb79f5c255a24a2d989bc7968",
+  "reviewer": "Authored fixture demonstration reviewer",
+  "decisions": [
+    {
+      "evidence_id": "c2-e1",
+      "decision": "accept",
+      "relation": "support",
+      "note": "Original rule explicitly states the 10000 limit; check whether superseded."
+    },
+    {
+      "evidence_id": "c2-e2",
+      "decision": "accept",
+      "relation": "oppose",
+      "note": "Later FAQ explicitly states 12000, opposing the 10000 claim; clarify which version applies."
+    }
+  ]
+}

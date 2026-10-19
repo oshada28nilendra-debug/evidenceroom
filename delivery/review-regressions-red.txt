@@ -1,0 +1,51 @@
+test_incomplete_bundle_cannot_pass_verification (tests.test_review_regressions.ReviewRegressionTests.test_incomplete_bundle_cannot_pass_verification) ... FAIL
+test_list_valued_source_kind_and_review_decision_are_controlled_errors (tests.test_review_regressions.ReviewRegressionTests.test_list_valued_source_kind_and_review_decision_are_controlled_errors) ... ERROR
+test_malformed_discovery_items_are_controlled_errors (tests.test_review_regressions.ReviewRegressionTests.test_malformed_discovery_items_are_controlled_errors) ... ERROR
+test_trickle_response_cannot_extend_model_deadline (tests.test_review_regressions.ReviewRegressionTests.test_trickle_response_cannot_extend_model_deadline) ... FAIL
+
+======================================================================
+ERROR: test_list_valued_source_kind_and_review_decision_are_controlled_errors (tests.test_review_regressions.ReviewRegressionTests.test_list_valued_source_kind_and_review_decision_are_controlled_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 42, in test_list_valued_source_kind_and_review_decision_are_controlled_errors
+    with self.assertRaises(Error):load_case(f)
+                                  ^^^^^^^^^^^^
+  File "/workspace/scratch/1e12a4453378/evidenceroom/evidenceroom/core.py", line 63, in load_case
+    if s.get("kind") not in {"primary", "secondary", "unknown"}:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+======================================================================
+ERROR: test_malformed_discovery_items_are_controlled_errors (tests.test_review_regressions.ReviewRegressionTests.test_malformed_discovery_items_are_controlled_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 50, in test_malformed_discovery_items_are_controlled_errors
+    with self.assertRaises(Error):discover('question',fetcher=fake)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1e12a4453378/evidenceroom/evidenceroom/network.py", line 118, in discover
+    "title": i.get("title", ["Untitled"])[0],
+             ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+======================================================================
+FAIL: test_incomplete_bundle_cannot_pass_verification (tests.test_review_regressions.ReviewRegressionTests.test_incomplete_bundle_cannot_pass_verification)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 54, in test_incomplete_bundle_cannot_pass_verification
+    with self.assertRaises(Error):verify_bundle(b)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Error not raised
+
+======================================================================
+FAIL: test_trickle_response_cannot_extend_model_deadline (tests.test_review_regressions.ReviewRegressionTests.test_trickle_response_cannot_extend_model_deadline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 31, in test_trickle_response_cannot_extend_model_deadline
+    with self.assertRaises(Error):
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Error not raised
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.010s
+
+FAILED (failures=2, errors=2)

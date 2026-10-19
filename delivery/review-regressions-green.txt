@@ -1,0 +1,10 @@
+test_incomplete_bundle_cannot_pass_verification (tests.test_review_regressions.ReviewRegressionTests.test_incomplete_bundle_cannot_pass_verification) ... ok
+test_list_valued_source_kind_and_review_decision_are_controlled_errors (tests.test_review_regressions.ReviewRegressionTests.test_list_valued_source_kind_and_review_decision_are_controlled_errors) ... ok
+test_malformed_discovery_items_are_controlled_errors (tests.test_review_regressions.ReviewRegressionTests.test_malformed_discovery_items_are_controlled_errors) ... ok
+test_source_slow_headers_cannot_extend_deadline (tests.test_review_regressions.ReviewRegressionTests.test_source_slow_headers_cannot_extend_deadline) ... ok
+test_trickle_response_cannot_extend_model_deadline (tests.test_review_regressions.ReviewRegressionTests.test_trickle_response_cannot_extend_model_deadline) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.020s
+
+OK

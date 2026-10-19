@@ -1,0 +1,14 @@
+test_crossref_metadata_is_discovery_not_claim_evidence (tests.test_transport.FetchTests.test_crossref_metadata_is_discovery_not_claim_evidence) ... ok
+test_pinned_connection_receives_validated_address (tests.test_transport.FetchTests.test_pinned_connection_receives_validated_address) ... ok
+test_source_redirect_size_and_mime_fail_closed (tests.test_transport.FetchTests.test_source_redirect_size_and_mime_fail_closed) ... ok
+test_all_dns_results_checked_including_mixed_private (tests.test_transport.TransportTests.test_all_dns_results_checked_including_mixed_private) ... ok
+test_http_failures_hide_response_and_refuse_redirect (tests.test_transport.TransportTests.test_http_failures_hide_response_and_refuse_redirect) ... ok
+test_malformed_json_content_rejected (tests.test_transport.TransportTests.test_malformed_json_content_rejected) ... ok
+test_private_urls_and_unlisted_hosts_blocked (tests.test_transport.TransportTests.test_private_urls_and_unlisted_hosts_blocked) ... ok
+test_real_http_json_and_usage_with_simulated_model (tests.test_transport.TransportTests.test_real_http_json_and_usage_with_simulated_model) ... ok
+test_remote_provider_requires_explicit_https_consent (tests.test_transport.TransportTests.test_remote_provider_requires_explicit_https_consent) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 3.025s
+
+OK

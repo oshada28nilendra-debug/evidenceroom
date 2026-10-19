@@ -1,0 +1,8 @@
+{
+  "status": "review_ready",
+  "mode": "live_model",
+  "claims": 5,
+  "bundle": "delivery/live-plan-attempt-2/bundle.json",
+  "decision": "human_review_required",
+  "model_calls": 6
+}

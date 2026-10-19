@@ -1,0 +1,21 @@
+test_model_must_not_repeat_decision_options_as_claims (tests.test_pipeline.PlanningRegressionTests.test_model_must_not_repeat_decision_options_as_claims) ... ERROR
+
+======================================================================
+ERROR: test_model_must_not_repeat_decision_options_as_claims (tests.test_pipeline.PlanningRegressionTests.test_model_must_not_repeat_decision_options_as_claims)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_pipeline.py", line 157, in test_model_must_not_repeat_decision_options_as_claims
+    report=build(p,provider=ScriptedProvider([{'claims':['Apply now']}]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1e12a4453378/evidenceroom/evidenceroom/pipeline.py", line 143, in build
+    output = provider.complete(
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_pipeline.py", line 22, in complete
+    return next(self.outputs)
+           ^^^^^^^^^^^^^^^^^^
+StopIteration
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)

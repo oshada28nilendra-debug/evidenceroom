@@ -1,0 +1,114 @@
+{
+  "recorded_at": "2026-10-18T07:57:54.473788+00:00",
+  "python": "3.12.14",
+  "checks": {
+    "tests": {
+      "exit_code": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-v"
+      ],
+      "log": "delivery/tests.txt"
+    },
+    "lint": {
+      "exit_code": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "log": "delivery/lint.txt"
+    },
+    "format": {
+      "exit_code": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "log": "delivery/format.txt"
+    },
+    "compile": {
+      "exit_code": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "evidenceroom",
+        "scripts"
+      ],
+      "log": "delivery/compile.txt"
+    },
+    "wheel": {
+      "exit_code": 0,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "--no-deps",
+        "--no-build-isolation",
+        ".",
+        "--wheel-dir",
+        "/tmp/evidenceroom-release-wheel"
+      ],
+      "log": "delivery/wheel.txt"
+    },
+    "secret_scan": {
+      "exit_code": 0,
+      "command": [
+        "/workspace/scratch/1e12a4453378/security-audit-tools/gitleaks",
+        "dir",
+        "--redact",
+        "."
+      ],
+      "log": "delivery/secret_scan.txt"
+    }
+  },
+  "tests_total": 39,
+  "tests_passed": 39,
+  "tests_skipped": 0,
+  "ci_run": false,
+  "public_source_fetch_verified": false,
+  "crossref_verified": false,
+  "public_integration_blocker": "System resolver cannot resolve public source hosts in this environment; fail-closed fetch path.",
+  "live_model": "see delivery/live-model-final and docs/VERIFICATION.md",
+  "github_repository": null,
+  "paid_model_api_calls": 0,
+  "live_model_verified": true,
+  "live_model_provider": "llama.cpp b11718 / Qwen3-1.7B Q8_0",
+  "live_model_final": {
+    "bundle": "delivery/live-model-final/bundle.json",
+    "calls": 4,
+    "prompt_tokens": 2322,
+    "completion_tokens": 642,
+    "fixture_gate": "passed"
+  },
+  "live_planner_final": {
+    "bundle": "delivery/live-plan-final/bundle.json",
+    "calls": 1,
+    "prompt_tokens": 353,
+    "completion_tokens": 112,
+    "outcome": "abstained; normative plan rejected",
+    "semantic_planning_quality_verified": false
+  },
+  "source_manifest": "delivery/implementation-sha256.json",
+  "standalone_live_helper": {
+    "executed": true,
+    "exit_code": 0,
+    "gate": "passed",
+    "calls": 4,
+    "prompt_tokens": 2322,
+    "completion_tokens": 642,
+    "path": "delivery/standalone-smoke/"
+  }
+}

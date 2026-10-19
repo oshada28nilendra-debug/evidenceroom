@@ -1,0 +1,56 @@
+test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) ... 
+  test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) (key='options') ... FAIL
+  test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) (key='warnings') ... FAIL
+  test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) (key='errors') ... FAIL
+  test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) (key='mode') ... FAIL
+test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) ... FAIL
+
+======================================================================
+FAIL: test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) (key='options')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 139, in test_rehashed_invalid_reporting_fields_do_not_verify
+    with self.subTest(key=key),self.assertRaises(Error):verify_bundle(b)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Error not raised
+
+======================================================================
+FAIL: test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) (key='warnings')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 139, in test_rehashed_invalid_reporting_fields_do_not_verify
+    with self.subTest(key=key),self.assertRaises(Error):verify_bundle(b)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Error not raised
+
+======================================================================
+FAIL: test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) (key='errors')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 139, in test_rehashed_invalid_reporting_fields_do_not_verify
+    with self.subTest(key=key),self.assertRaises(Error):verify_bundle(b)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Error not raised
+
+======================================================================
+FAIL: test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify) (key='mode')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 139, in test_rehashed_invalid_reporting_fields_do_not_verify
+    with self.subTest(key=key),self.assertRaises(Error):verify_bundle(b)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Error not raised
+
+======================================================================
+FAIL: test_rehashed_invalid_reporting_fields_do_not_verify (tests.test_review_regressions.ReviewRegressionTests.test_rehashed_invalid_reporting_fields_do_not_verify)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1e12a4453378/evidenceroom/tests/test_review_regressions.py", line 142, in test_rehashed_invalid_reporting_fields_do_not_verify
+    with self.assertRaises(Error):verify_bundle(b)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Error not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=5)

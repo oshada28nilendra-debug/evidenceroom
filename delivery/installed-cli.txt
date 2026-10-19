@@ -1,0 +1,9 @@
+usage: evidenceroom [-h] {run,discover,review,verify} ...
+
+Reviewable claim/evidence decision audits
+
+positional arguments:
+  {run,discover,review,verify}
+
+options:
+  -h, --help            show this help message and exit

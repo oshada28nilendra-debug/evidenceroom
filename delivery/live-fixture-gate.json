@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "mode": "real_local_model",
+  "model": {
+    "runtime_release": "https://github.com/ggml-org/llama.cpp/releases/tag/b11718",
+    "runtime_digest": "sha256:99f83b15cea9a4fb8945516c276b5f42b11608f82104fc6fa98a541cac826de7",
+    "upstream_runtime_digest": "sha256:99f83b15cea9a4fb8945516c276b5f42b11608f82104fc6fa98a541cac826de7",
+    "model_repo": "Qwen/Qwen3-1.7B-GGUF",
+    "model_revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+    "model_file": "Qwen3-1.7B-Q8_0.gguf",
+    "model_license": "apache-2.0",
+    "model_sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a"
+  },
+  "usage": {
+    "calls": 4,
+    "usage": {
+      "prompt_tokens": 2322,
+      "completion_tokens": 642
+    }
+  },
+  "bundle_digest": "18ec36c61e795658ca30251d0fe5919b3f72784f4e4173b96ed55ecd64ce018c",
+  "checks": [
+    "bundle integrity and exact quotes",
+    "support for 10000 from original rule",
+    "opposition from 12000 FAQ",
+    "no proposed direct evidence for unsupported audited-accounts claim"
+  ],
+  "manual_review": "Eligibility and deadline support, 10000-vs-12000 opposition and source references inspected. Missing-account claim remained context-only, although its model rationale drifted to the overall question.",
+  "limits": "One authored synthetic source pack, not an accuracy benchmark. Semantic judgments remain unreviewed in product output.",
+  "verified_bundle": "delivery/live-model-final/bundle.json"
+}

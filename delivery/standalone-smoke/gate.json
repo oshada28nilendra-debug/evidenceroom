@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "bundle_digest": "1e037ab03197cfe75e21377ff1ea98f267d8b472d6611d6d364b18838785e6f9",
+  "model": {
+    "calls": 4,
+    "usage": {
+      "prompt_tokens": 2322,
+      "completion_tokens": 642
+    }
+  },
+  "limit": "One authored fixture; human review still required."
+}

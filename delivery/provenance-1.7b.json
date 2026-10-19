@@ -1,0 +1,10 @@
+{
+  "runtime_release": "https://github.com/ggml-org/llama.cpp/releases/tag/b11718",
+  "runtime_digest": "sha256:99f83b15cea9a4fb8945516c276b5f42b11608f82104fc6fa98a541cac826de7",
+  "upstream_runtime_digest": "sha256:99f83b15cea9a4fb8945516c276b5f42b11608f82104fc6fa98a541cac826de7",
+  "model_repo": "Qwen/Qwen3-1.7B-GGUF",
+  "model_revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+  "model_file": "Qwen3-1.7B-Q8_0.gguf",
+  "model_license": "apache-2.0",
+  "model_sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a"
+}

@@ -1,0 +1,9 @@
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: evidenceroom
+  Building wheel for evidenceroom (pyproject.toml): started
+  Building wheel for evidenceroom (pyproject.toml): finished with status 'done'
+  Created wheel for evidenceroom: filename=evidenceroom-0.1.0-py3-none-any.whl size=26506 sha256=987121bb49c2ff3ad57ec6c9b865f90da558e217eb00c99eb63914d0cbdd6215
+  Stored in directory: /tmp/pip-ephem-wheel-cache-x9trren4/wheels/df/e9/f5/27d48e09bcadbc15e016dbc1c51fe2d1e756a554809a022763
+Successfully built evidenceroom
